@@ -31,3 +31,6 @@ tasks.test {
     }
 }
 
+tasks.register("stage") {
+    dependsOn("build")
+}
