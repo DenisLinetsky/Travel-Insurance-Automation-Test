@@ -35,6 +35,7 @@ public class HarelTest {
         harelPage.clickNext();
         harelPage.chooseStartDate();
         harelPage.chooseEndDate();
+        System.out.println(harelPage.getTotalDays());
         Assert.assertEquals(harelPage.getTotalDays(), "סה\"כ: 31 ימים");
         harelPage.choosePassengers();
         Assert.assertEquals(harelPage.getPassengersScreenTitle(), "נשמח להכיר את הנוסעים שנבטח הפעם");
